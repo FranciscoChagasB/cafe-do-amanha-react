@@ -1,0 +1,155 @@
+/* General Styles for Stories Section */
+.stories-section {
+    padding: 4rem 2rem;
+    background-color: #fdf7f3;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.stories-section h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #5a3d2b;
+    /* Tom de café */
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.stories-section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Story List Styles */
+.story-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Individual Story Card */
+.story {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #ddd;
+}
+
+.story:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.story h2 {
+    font-size: 1.8rem;
+    color: #5a3d2b;
+    margin-bottom: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.story p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Animations */
+.story {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+.story:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.story:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.story:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .stories-section {
+        padding: 2rem 1rem;
+    }
+
+    .story h2 {
+        font-size: 1.5rem;
+    }
+
+    .story p {
+        font-size: 0.95rem;
+    }
+
+    .story-list {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .stories-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .story {
+        padding: 1.2rem;
+    }
+
+    .story-list {
+        grid-template-columns: 1fr;
+    }
+
+    .story h2 {
+        font-size: 1.4rem;
+    }
+
+    .story p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .stories-section {
+        padding: 1rem;
+    }
+
+    .story h2 {
+        font-size: 1.2rem;
+    }
+
+    .story p {
+        font-size: 0.85rem;
+    }
+
+    .story {
+        padding: 1rem;
+    }
+
+    .story-list {
+        grid-template-columns: 1fr;
+    }
+}
