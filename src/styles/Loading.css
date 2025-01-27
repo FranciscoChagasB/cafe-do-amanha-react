@@ -4,10 +4,12 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
+    text-align: center;
     color: #333;
     font-family: 'Arial', sans-serif;
     font-size: 18px;
+    padding: 0 20px;
 }
 
 .spinner {
@@ -30,27 +32,37 @@
     }
 }
 
+/* Estilo do texto */
+p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
 /* Responsividade para o Loading */
 @media (max-width: 768px) {
-    .loading-container {
-        font-size: 16px; /* Menor fonte em telas menores */
+    .spinner {
+        width: 60px;
+        height: 60px;
     }
 
-    .spinner {
-        width: 40px;
-        height: 40px;
-        border-width: 4px; /* Tamanho do spinner reduzido */
+    p {
+        font-size: 1rem;
+        /* Ajuste de fonte para telas menores */
     }
 }
 
-@media (max-width: 576px) {
-    .loading-container {
-        font-size: 14px; /* Menor fonte para telas muito pequenas */
+@media (max-width: 480px) {
+    .spinner {
+        width: 50px;
+        height: 50px;
     }
 
-    .spinner {
-        width: 30px;
-        height: 30px;
-        border-width: 3px; /* Spinner ainda menor em telas pequenas */
+    p {
+        font-size: 0.9rem;
+        /* Ajuste de fonte para telas muito pequenas */
     }
 }

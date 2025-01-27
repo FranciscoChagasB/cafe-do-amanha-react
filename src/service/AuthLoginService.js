@@ -4,12 +4,12 @@ export const login = async ({ email, senha }) => {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email, senha }),  // Envia as credenciais
+        body: JSON.stringify({ email, senha }), // Envia as credenciais
     });
 
     if (response.ok) {
         const data = await response.json();
-        return data;  // Retorna os dados do usuário (ou token, se necessário)
+        return data;
     } else {
         const errorData = await response.json();
         throw new Error(errorData.message || 'Credenciais inválidas');

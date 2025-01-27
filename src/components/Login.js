@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../service/AuthContextService';
-import { useNavigate } from 'react-router-dom'; 
+import { useNavigate } from 'react-router-dom';
 import '../styles/Login.css';
 
 function Login() {
@@ -46,7 +46,7 @@ function Login() {
             required
           />
         </div>
-        {error && <p className="error-message">{error}</p>}
+        {error && <p className="error-message">{error}</p>}  {/* Exibe o erro aqui */}
         <button type="submit">Entrar</button>
       </form>
     </div>

@@ -32,7 +32,6 @@ function Stories() {
                         <div className="story" key={index}>
                             <h2>{story.title}</h2>
                             <p>{story.content}</p>
-                            <button className="read-more-btn">Leia Mais</button>
                         </div>
                     ))}
                 </div>

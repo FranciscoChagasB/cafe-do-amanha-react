@@ -1,10 +1,19 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 import { login as loginService } from './AuthLoginService';
 
 const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
-    const [user, setUser] = useState(JSON.parse(localStorage.getItem('authUser')));
+    const [user, setUser] = useState(null);
+    const [isLoading, setIsLoading] = useState(true); // Estado para indicar se está carregando
+
+    useEffect(() => {
+        const checkUser = JSON.parse(localStorage.getItem('authUser'));
+        if (checkUser) {
+            setUser(checkUser);
+        }
+        setIsLoading(false); // Depois de checar, finalize o carregamento
+    }, []);
 
     const login = async (userData) => {
         try {
@@ -24,7 +33,7 @@ export const AuthProvider = ({ children }) => {
     const isAuthenticated = !!user;
 
     return (
-        <AuthContext.Provider value={{ user, login, logout, isAuthenticated }}>
+        <AuthContext.Provider value={{ user, login, logout, isAuthenticated, isLoading }}>
             {children}
         </AuthContext.Provider>
     );
