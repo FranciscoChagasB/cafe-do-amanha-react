@@ -1,0 +1,12 @@
+.div{
+width: 40%; 
+margin: 0 auto; 
+margin-top: 20px; 
+} 
+
+
+@media (max-width: 770px){
+    .div{
+        width: 100%;
+    }
+}

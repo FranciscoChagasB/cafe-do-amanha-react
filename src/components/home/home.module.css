@@ -1,0 +1,38 @@
+.content{
+    height: 100vh;
+    width: 100%;
+    background-image:url("../../assets/images/image.png") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    position: relative;
+
+}
+.content::before{
+    content: '';
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+.content::after{
+    content: '';
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.567);
+    
+    
+}
+.textcontent{
+    color: aliceblue;
+    z-index: 1;
+}
+.textcontent h2{
+    font-size: 4em;
+
+}
+.textcontent p{
+    font-size: 1.6rem;
+}
