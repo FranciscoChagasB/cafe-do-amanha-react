@@ -1,0 +1,70 @@
+.footer {
+    background-color: #8b5e3c;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-family: 'Georgia', serif;
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 0;
+    }
+
+    .footer p {
+        font-size: 0.9rem;
+    }
+
+    .footer .container {
+        padding: 0 10px;
+    }
+
+    .footer .social-links {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+.footer a {
+    color: #fff; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #4b1b03; 
+}
+
+
+/* Estilos para links de redes sociais */
+.footer .social-links a {
+    color: #fff;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease; 
+    display: inline-block;
+}
+
+/* Efeito de hover para links sociais */
+.footer .social-links a:hover {
+    transform: scale(1.2);
+    color: #4b1b03; 
+}
