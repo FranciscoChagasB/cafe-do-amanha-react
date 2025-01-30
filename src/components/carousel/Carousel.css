@@ -1,0 +1,16 @@
+.carousel-container {
+    width: 40%;
+    margin: 20px auto;
+}
+
+.carousel-img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+@media (max-width: 770px) {
+    .carousel-container {
+        width: 100%;
+    }
+}

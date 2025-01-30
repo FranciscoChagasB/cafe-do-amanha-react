@@ -1,0 +1,86 @@
+/* NotFound.css */
+.notfound-page {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.notfound-page h1 {
+    color: #e67e22;
+}
+
+.notfound-page p {
+    font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+    .notfound-page {
+        padding: 35px;
+    }
+
+    .notfound-page h1 {
+        font-size: 2.5rem;
+    }
+
+    .notfound-page p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .notfound-page {
+        padding: 30px;
+    }
+
+    .notfound-page h1 {
+        font-size: 2.2rem;
+    }
+
+    .notfound-page p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .notfound-page {
+        padding: 25px;
+    }
+
+    .notfound-page h1 {
+        font-size: 2rem;
+    }
+
+    .notfound-page p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .notfound-page {
+        padding: 20px;
+    }
+
+    .notfound-page h1 {
+        font-size: 1.8rem;
+    }
+
+    .notfound-page p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+    .notfound-page {
+        padding: 15px;
+    }
+
+    .notfound-page h1 {
+        font-size: 1.6rem;
+    }
+
+    .notfound-page p {
+        font-size: 12px;
+    }
+}

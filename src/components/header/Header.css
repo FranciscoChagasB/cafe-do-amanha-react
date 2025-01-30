@@ -1,0 +1,118 @@
+/* Estilo do Header */
+.header {
+    background-color: #8b5e3c;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adicionando sombra */
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brand {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2rem;
+    color: #3e2723;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #3e2723;
+}
+
+.nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #8b5e3c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav.open {
+    display: block;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul li {
+    margin: 10px 0;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.nav ul li a:hover {
+    background-color: #3e2723;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Botão de Logout */
+.logout-btn {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.logout-btn:hover {
+    background-color: #e65c52;
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        position: static;
+        background: none;
+    }
+
+    .nav ul {
+        display: flex;
+        gap: 15px;
+    }
+
+    .nav ul li {
+        margin: 0;
+    }
+}
+
+/* Para o conteúdo da página não ser coberto pelo Header fixo */
+body {
+    padding-top: 90px; /* Ajuste para que o conteúdo não fique por baixo do header */
+}

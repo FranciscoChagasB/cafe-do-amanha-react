@@ -1,0 +1,138 @@
+/* Estilo de Contact.css */
+.contact-section {
+    background-color: #f4f7f6;
+    padding: 50px 0;
+    margin-top: 100px; /* Aumenta a margem para afastar do header */
+    margin-bottom: 50px; /* Aumenta a margem para afastar do footer */
+    display: flex;
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Centraliza os itens */
+}
+
+.contact-section .container {
+    max-width: 900px;
+    width: 100%; /* Garante que o container ocupe toda a largura disponível */
+    padding: 0 20px;
+}
+
+/* Título de Contato */
+.contact-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Descrição de contato */
+.contact-description {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Informações de contato */
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    width: 100%; /* Faz a div ocupar toda a largura disponível */
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Formulário de Contato */
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Organiza os campos do formulário em uma coluna */
+    width: 100%; /* Faz o formulário ocupar toda a largura disponível */
+}
+
+/* Agrupamento dos campos de formulário */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Estilos para os rótulos do formulário */
+.form-group label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Estilos para os campos de entrada do formulário */
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Estilos ao focar nos campos de entrada */
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+/* Botão de envio */
+.submit-btn {
+    background-color: #50382c;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px; /* Espaço entre o último campo e o botão */
+}
+
+/* Hover no botão de envio */
+.submit-btn:hover {
+    background-color: #4e3629;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contact-section {
+        margin-top: 120px; /* Ajusta a margem superior em telas pequenas */
+        margin-bottom: 40px; /* Ajusta a margem inferior em telas pequenas */
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .contact-title {
+        font-size: 28px;
+    }
+
+    .contact-description {
+        font-size: 14px;
+    }
+
+    .contact-info, .contact-form {
+        padding: 20px;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 16px;
+    }
+}

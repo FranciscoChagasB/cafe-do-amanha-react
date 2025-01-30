@@ -1,0 +1,176 @@
+/* Estilo geral da página de pedidos */
+.order-container {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f4f1eb; /* Cor de fundo suave */
+    padding-top: 80px; /* Adicionando padding-top para ajustar ao header fixo */
+    display: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4a2c1d; /* Marrom escuro */
+}
+
+form {
+    display: auto;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Estilo dos campos de entrada */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #b68e5e; /* Bordas em tom de marrom claro */
+    background-color: #fff; /* Cor de fundo dos inputs */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6f4f37; /* Marrom café */
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #4e3629; /* Marrom escuro */
+}
+
+/* Estilo da lista de categorias (cafés, sobremesas, etc.) */
+.menu-category-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.category-button {
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: #8c5e3c; /* Marrom médio */
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 48%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.category-button:hover {
+    background-color: #70401c; /* Marrom mais escuro */
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4a2c1d; /* Marrom escuro */
+}
+
+/* Estilo do modal */
+.modal-body {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #4a2c1d; /* Marrom escuro */
+}
+
+/* Estilo do campo de quantidade */
+input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #b68e5e; /* Bordas em tom de marrom claro */
+}
+
+/* Estilo da lista de itens no pedido */
+.order-item-list {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.order-item-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #b68e5e; /* Bordas em tom de marrom claro */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9; /* Cor de fundo clara */
+}
+
+.order-item-list li .item-name {
+    flex: 1;
+    color: #4a2c1d; /* Marrom escuro */
+}
+
+.order-item-list li .item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.order-item-list li .item-quantity input {
+    width: 60px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* Botão de remover item */
+.order-item-list li .remove-item {
+    background-color: #c0392b; /* Vermelho mais suave */
+    color: white;
+    border: none;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+}
+
+.order-item-list li .remove-item:hover {
+    background-color: #a93226; /* Vermelho mais escuro */
+}
+
+/* Estilos de Responsividade */
+@media (max-width: 768px) {
+    .menu-category-list {
+        flex-direction: column;
+    }
+
+    .category-button {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    input[type="number"] {
+        width: 50px;
+    }
+
+    .order-item-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .order-item-list li .item-quantity {
+        margin-top: 5px;
+    }
+}

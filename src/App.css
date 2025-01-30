@@ -1,0 +1,102 @@
+/* Estilo global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Container principal */
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Logo */
+.App-logo {
+  height: 15vmin;
+  max-width: 150px;
+  pointer-events: none;
+  transition: transform 0.3s ease-in-out, opacity 0.5s ease;
+}
+
+/* Animação da logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 15s linear;
+  }
+}
+
+/* Efeito ao passar o mouse sobre a logo */
+.App-logo:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Header */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(12px + 2vmin);
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Header responsivo */
+@media (max-width: 600px) {
+  .App-header {
+    font-size: calc(10px + 3vmin);
+    padding: 15px;
+  }
+
+  .App-logo {
+    height: 20vmin;
+  }
+}
+
+/* Links */
+.App-link {
+  color: #61dafb;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.App-link:hover {
+  color: #21a1f1;
+  transform: scale(1.1);
+}
+
+/* Animação da logo */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Efeito de transição suave na página */
+.App-header:hover {
+  transform: translateY(-10px);
+  background-color: #333;
+}

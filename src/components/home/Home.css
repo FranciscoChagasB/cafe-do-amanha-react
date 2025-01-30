@@ -1,0 +1,93 @@
+.home {
+    position: relative;
+    background: url('../../assets/images/cafe-background.jpg') no-repeat center center/cover;
+    background-size: cover;
+    color: #fff;
+    height: calc(100vh - 90px); /* Subtrai a altura do header fixo */
+    width: 100%; /* Garante que ocupe toda a largura */
+    overflow: hidden; /* Remove qualquer overflow */
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna, colocando o título acima do parágrafo */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Overlay escuro na home */
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* Container dentro da home */
+.home .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; /* Garantir um espaçamento confortável */
+    text-align: center; /* Alinha o texto centralizado */
+}
+
+/* Estilo do título dentro da home */
+.home h2 {
+    font-size: 3rem;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 20px;
+    line-height: 1.2; /* Aumenta a altura da linha para dar mais espaço ao texto */
+    color: #fff; /* Cor do texto para o título */
+}
+
+/* Estilo do parágrafo dentro da home */
+.home p {
+    font-size: 1.4rem;
+    font-family: 'Georgia', serif;
+    line-height: 1.6; /* Espaço maior entre as linhas de texto */
+    color: #fff; /* Cor do texto para o parágrafo */
+}
+
+/* Ajustes responsivos para telas pequenas */
+@media (max-width: 768px) {
+    .home {
+        height: 100vh; /* Garante a altura total em dispositivos móveis */
+        padding: 20px; /* Padding em dispositivos móveis */
+    }
+
+    .home h2 {
+        font-size: 2rem;
+    }
+
+    .home p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Ajustes gerais para a home */
+.home,
+.home .container {
+    margin: 0;
+    padding: 0;
+}
+
+.home h2,
+.home p {
+    margin: 0;
+}
+
+.home h2 {
+    margin-bottom: 20px;
+}
+
+.home p {
+    margin-top: 10px;
+}
+
+.home {
+    padding-top: 90px; /* Ajuste para o conteúdo não ser coberto pelo header */
+}
