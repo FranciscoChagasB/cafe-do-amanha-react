@@ -1,6 +1,7 @@
 /* Estilo específico para a página de pedidos */
 .order-container {
-    min-height: 60vh; /* Agora ocupa toda a tela */
+    min-height: 60vh;
+    /* Agora ocupa toda a tela */
     width: 900px;
     padding: 3rem 2rem;
     margin: 0 auto;

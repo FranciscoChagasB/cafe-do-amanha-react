@@ -1,0 +1,107 @@
+/* Estilo da página de perfil */
+.user-profile-page {
+    background-color: #D7C9B0;
+    /* Cor de fundo bege/café claro */
+    min-height: 100vh;
+    /* Garantir que ocupe toda a altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Georgia', serif;
+}
+
+/* Cabeçalho da página de perfil */
+.user-profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.user-profile-header h1 {
+    font-size: 2rem;
+    color: #3E2723;
+    /* Marrom escuro */
+    margin: 0;
+}
+
+/* Estilo do container de informações do usuário */
+.user-profile-info {
+    width: 100%;
+    max-width: 900px;
+    /* Maximo para o container */
+    background-color: #FFF;
+    /* Cor de fundo branca para destacar */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+.user-profile-info h2 {
+    font-size: 1.8rem;
+    color: #8B5E3C;
+    /* Marrom médio para as seções */
+    margin-bottom: 20px;
+}
+
+.user-profile-info p {
+    font-size: 1.2rem;
+    color: #3E2723;
+    /* Marrom escuro */
+    margin: 10px 0;
+}
+
+/* Detalhes do usuário */
+.user-profile-info .user-details {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+.user-profile-info .user-details span {
+    font-weight: bold;
+    color: #8B5E3C;
+}
+
+/* Botão de Logout */
+.logout-btn {
+    display: block;
+    margin-top: 20px;
+    background-color: #EF7E74;
+    /* Cor do botão de logout */
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 200px;
+    /* Limitar largura do botão */
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logout-btn:hover {
+    background-color: #E65C52;
+    /* Cor de hover para logout */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .user-profile-page {
+        padding: 20px;
+    }
+
+    .user-profile-info {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .logout-btn {
+        width: 90%;
+    }
+}

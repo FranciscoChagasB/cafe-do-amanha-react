@@ -30,7 +30,16 @@
     font-weight: bold;
 }
 
-/* Responsividade */
+@media (max-width: 1024px) {
+    .contentTexts {
+        max-width: 70%;
+    }
+
+    .contentTexts h1 {
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .contentTexts {
         max-width: 80%;
@@ -38,5 +47,16 @@
 
     .contentTexts h1 {
         font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contentTexts {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .contentTexts h1 {
+        font-size: 1.2rem;
     }
 }

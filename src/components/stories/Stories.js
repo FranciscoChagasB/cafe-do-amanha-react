@@ -26,7 +26,7 @@ function Stories() {
                         Descubra as histórias inspiradoras que fazem parte do Café do Amanhã. Desde as viagens aventureiras de Nanda até as serenatas à beira-mar de Junior, cada momento é uma celebração de suas paixões.
                     </p>
                 </div>
-    
+
                 <div className="story-list">
                     {stories.map((story, index) => (
                         <div className="story" key={index}>
@@ -37,7 +37,7 @@ function Stories() {
                 </div>
             </div>
         </section>
-    );    
+    );
 }
 
 export default Stories;

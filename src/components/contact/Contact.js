@@ -15,7 +15,7 @@ function Contact() {
                     <p><strong>Telefone:</strong> (85) 1234-5678</p>
                     <p><strong>Email:</strong> contato@cafedoamanha.com</p>
                 </div>
-                
+
                 <form className="contact-form">
                     <div className="form-group">
                         <label htmlFor="name">Nome Completo:</label>

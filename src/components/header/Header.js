@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useAuth } from '../../service/AuthContextService';
+import UserProfile from '../user-profile/UserProfile';
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
-    const { isAuthenticated, logout } = useAuth(); // Pegando os dados do contexto de autenticação
-
-    const handleLogout = () => {
-        logout();
-        window.location.href = '/login'; // Redirecionando para a página de login após logout
-    };
+    const { isAuthenticated } = useAuth(); // Pegando os dados do contexto de autenticação
 
     return (
         <header className="header">
@@ -26,13 +22,11 @@ function Header() {
                         <li><Link to="/pedidos" onClick={() => setMenuOpen(false)}>Pedidos</Link></li>
                         <li><Link to="/historias" onClick={() => setMenuOpen(false)}>Histórias</Link></li>
                         <li><Link to="/contato" onClick={() => setMenuOpen(false)}>Contato</Link></li>
+                        <li><Link to="/avaliacao" onClick={() => setMenuOpen(false)}>Avaliações</Link></li>
                     </ul>
-                    {/* Renderizando o botão de logout apenas se o usuário estiver autenticado */}
-                    {isAuthenticated && (
-                        <button className="logout-btn" onClick={handleLogout}>
-                            Logout
-                        </button>
-                    )}
+
+                    {/* Exibe o UserProfile apenas se o usuário estiver autenticado */}
+                    {isAuthenticated && <div className="user-profile-container"><UserProfile /></div>}
                 </nav>
             </div>
         </header>

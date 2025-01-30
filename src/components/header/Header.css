@@ -7,7 +7,14 @@
     left: 0;
     width: 100%;
     z-index: 100;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adicionando sombra */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Adicionando sombra */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Alinha o conteúdo do header */
+    flex-wrap: wrap;
+    /* Permite que os itens se ajustem quando o espaço for pequeno */
 }
 
 .header .container {
@@ -16,15 +23,22 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    width: 100%;
+    /* Garante que o container ocupe toda a largura */
 }
 
+/* Logo (Brand) */
 .brand {
     font-family: 'Brush Script MT', cursive;
     font-size: 2rem;
     color: #3e2723;
     text-decoration: none;
+    flex: 1;
+    /* Ocupa todo o espaço disponível */
 }
 
+/* Ícone do menu toggle (para mobile) */
 .menu-toggle {
     font-size: 24px;
     background: none;
@@ -33,6 +47,7 @@
     color: #3e2723;
 }
 
+/* Navbar */
 .nav {
     display: none;
     position: absolute;
@@ -51,10 +66,12 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    /* Faz os itens ficarem lado a lado */
 }
 
 .nav ul li {
-    margin: 10px 0;
+    margin: 10px;
 }
 
 .nav ul li a {
@@ -73,20 +90,56 @@
     border-radius: 5px;
 }
 
-/* Botão de Logout */
-.logout-btn {
-    background-color: #ef7e74;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-left: 10px;
+/* Ícone de Usuário e Logout */
+.user-profile-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    /* Distância do lado esquerdo */
 }
 
-.logout-btn:hover {
-    background-color: #e65c52;
+/* Menu do perfil */
+.user-profile-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #3E2723;
+    /* Marrom escuro */
+    font-family: 'Playfair Display', serif;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #FFF;
+    /* Fundo branco */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu do perfil */
+.user-profile-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #FFF;
+    border: 1px solid #8B5E3C;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.user-profile-menu-item {
+    display: block;
+    color: #3E2723;
+    text-decoration: none;
+    margin: 5px 0;
+    padding: 5px;
+    font-family: 'Playfair Display', serif;
+}
+
+.user-profile-menu-item:hover {
+    background-color: #8B5E3C;
+    color: #fff;
 }
 
 /* Responsividade */
@@ -111,7 +164,29 @@
     }
 }
 
+@media (max-width: 768px) {
+    .nav {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #8b5e3c;
+        width: 100%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .user-profile-container {
+        position: relative;
+        margin-left: auto;
+        /* Alinha à direita em telas pequenas */
+    }
+}
+
 /* Para o conteúdo da página não ser coberto pelo Header fixo */
 body {
-    padding-top: 90px; /* Ajuste para que o conteúdo não fique por baixo do header */
+    padding-top: 90px;
 }

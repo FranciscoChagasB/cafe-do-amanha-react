@@ -7,7 +7,7 @@ function Footer() {
                 <p>&copy; 2025 Café do Amanhã. Todos os direitos reservados.</p>
                 <address>
                     <p>
-                        738 Av. Beira Mar, Fortaleza, CE | 
+                        738 Av. Beira Mar, Fortaleza, CE |
                         <a href="tel:+558512345678" aria-label="Ligar para o telefone de contato">
                             (85) 1234-5678
                         </a>

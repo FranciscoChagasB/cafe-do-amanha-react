@@ -4,9 +4,11 @@
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    position: relative; /* Ajustado para evitar sobreposição */
+    position: relative;
+    /* Ajustado para evitar sobreposição */
     width: 100%;
-    z-index: 2; /* Certifica que o footer fique acima de outros elementos */
+    z-index: 2;
+    /* Certifica que o footer fique acima de outros elementos */
 }
 
 .footer .container {
@@ -42,13 +44,13 @@
 }
 
 .footer a {
-    color: #fff; 
-    text-decoration: none; 
+    color: #fff;
+    text-decoration: none;
     font-weight: bold;
 }
 
 .footer a:hover {
-    color: #4b1b03; 
+    color: #4b1b03;
 }
 
 
@@ -58,12 +60,12 @@
     margin: 0 15px;
     font-size: 1.5rem;
     text-decoration: none;
-    transition: transform 0.3s ease, color 0.3s ease; 
+    transition: transform 0.3s ease, color 0.3s ease;
     display: inline-block;
 }
 
 /* Efeito de hover para links sociais */
 .footer .social-links a:hover {
     transform: scale(1.2);
-    color: #4b1b03; 
+    color: #4b1b03;
 }

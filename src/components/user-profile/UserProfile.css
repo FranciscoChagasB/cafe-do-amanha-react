@@ -1,0 +1,67 @@
+/* Estilo para o ícone de usuário */
+.user-icon {
+    background-image: url('../../assets/images/user.png');
+    /* Cor de fundo que contraste com o fundo marrom */
+    background-size: cover;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    /* Torna o botão redondo */
+    font-size: 20px;
+    /* Ajusta o tamanho do ícone */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para dar destaque */
+}
+
+/* Menu do usuário */
+.user-menu {
+    position: absolute;
+    top: 50px;
+    /* Ajuste para não ficar sobrepondo o botão */
+    right: 0;
+    background-color: #FFF;
+    border: 1px solid #8B5E3C;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.menu-item {
+    color: #8B5E3C;
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    /* Remove qualquer borda indesejada */
+}
+
+.menu-item:hover {
+    background-color: #8B5E3C;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Estilo para a posição do ícone de usuário */
+.user-profile-container {
+    position: relative;
+}
+
+/* Responsividade: Quando o menu estiver aberto, a navegação se ajusta */
+@media (max-width: 768px) {
+    .user-icon {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .user-menu {
+        top: 55px;
+    }
+}

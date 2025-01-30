@@ -9,8 +9,21 @@
     object-fit: cover;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 1024px) {
+    .carousel-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
     .carousel-container {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-container {
+        width: 100%;
+        padding: 10px;
     }
 }

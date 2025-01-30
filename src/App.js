@@ -13,6 +13,8 @@ import Menu from './components/menu/Menu';
 import OrderPage from './components/order-page/OrderPage';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+import Review from './components/review/Review';
+import UserProfilePage from './components/user-profile/UserProfilePage';
 import './components/footer/Footer.css';
 import './components/header/Header.css';
 
@@ -34,9 +36,9 @@ function Root() {
                     element={isAuthenticated ? <Navigate to="/home" /> : <Navigate to="/login" />}
                 />
                 {/* Rota pública para o login */}
-                <Route 
-                    path="/login" 
-                    element={isAuthenticated ? <Navigate to="/home" /> : <Login/>} 
+                <Route
+                    path="/login"
+                    element={isAuthenticated ? <Navigate to="/home" /> : <Login />}
                 />
                 {/* Rotas protegidas */}
                 <Route
@@ -84,6 +86,22 @@ function Root() {
                     element={
                         <ProtectedRoute>
                             <Contact />
+                        </ProtectedRoute>
+                    }
+                />
+                <Route
+                    path="/avaliacao"
+                    element={
+                        <ProtectedRoute>
+                            <Review />
+                        </ProtectedRoute>
+                    }
+                />
+                <Route
+                    path="/perfil"
+                    element={
+                        <ProtectedRoute>
+                            <UserProfilePage />
                         </ProtectedRoute>
                     }
                 />

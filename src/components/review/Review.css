@@ -1,0 +1,120 @@
+/* Estilos gerais para a avaliação */
+.review-container {
+    padding: 60px;
+    background-color: #dfcfb2;
+    /* Creme claro */
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.review-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #8B5E3C;
+    font-family: 'Playfair Display', serif;
+}
+
+.review-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #8B5E3C;
+    border-radius: 5px;
+    background-color: #FFF;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Estilos do botão */
+.review-submit-btn {
+    padding: 10px 20px;
+    background-color: #6D4C41;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    margin-top: 15px;
+}
+
+.review-submit-btn:hover {
+    background-color: #4E342E;
+}
+
+/* Estilos das estrelas */
+.stars-container {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.star {
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.star.filled {
+    color: #ff9800;
+    /* Cor da estrela preenchida (laranja) */
+}
+
+.star.empty {
+    color: #ffffff;
+    /* Cor da estrela vazia (cinza claro) */
+}
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .review-container {
+        padding: 15px;
+    }
+
+    .review-title {
+        font-size: 1.3rem;
+    }
+
+    .review-textarea {
+        height: 90px;
+    }
+
+    .review-submit-btn {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .review-container {
+        padding: 12px;
+    }
+
+    .review-title {
+        font-size: 1.2rem;
+    }
+
+    .review-textarea {
+        height: 80px;
+    }
+
+    .review-submit-btn {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .review-container {
+        padding: 10px;
+    }
+
+    .review-title {
+        font-size: 1.1rem;
+    }
+
+    .review-textarea {
+        height: 70px;
+    }
+
+    .review-submit-btn {
+        font-size: 12px;
+    }
+}

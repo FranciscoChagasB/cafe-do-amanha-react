@@ -17,11 +17,14 @@ export const AuthProvider = ({ children }) => {
 
     const login = async (userData) => {
         try {
+            setIsLoading(true); // Começa o carregamento
             const loggedInUser = await loginService(userData);
             setUser(loggedInUser);
             localStorage.setItem('authUser', JSON.stringify(loggedInUser));
         } catch (error) {
             throw new Error(error.message || 'Erro ao fazer login');
+        } finally {
+            setIsLoading(false); // Finaliza o carregamento
         }
     };
 

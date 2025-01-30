@@ -9,12 +9,12 @@ import "./Carousel.css";
 
 function Carousel() {
     const settings = {
-        dots: true, 
+        dots: true,
         infinite: true,
         speed: 1000,
-        slidesToShow: 1, 
+        slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true, 
+        autoplay: true,
         autoplaySpeed: 1800, // Ajuste para um tempo mais confortável
     };
 
