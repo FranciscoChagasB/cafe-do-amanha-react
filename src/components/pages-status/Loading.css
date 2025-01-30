@@ -1,26 +1,25 @@
 .loading-container {
     position: fixed;
-    /* Permite que o loading sobreponha a tela inteira */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    /* Fundo semitransparente */
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Adiciona a direção de coluna para empilhar o texto abaixo do spinner */
     z-index: 9999;
 }
 
 .spinner {
-    width: 400px;
-    height: 400px;
+    width: 100px; /* Tamanho do spinner ajustado */
+    height: 100px; /* Tamanho do spinner ajustado */
     border: 5px solid #ccc;
     border-top: 5px solid #007BFF;
     border-radius: 50%;
     animation: spin 1s linear infinite;
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* Adiciona espaçamento entre o spinner e o texto */
 }
 
 @keyframes spin {
@@ -33,9 +32,8 @@
     }
 }
 
-/* Estilo do texto */
 p {
-    font-size: 1.2rem;
+    font-size: 1.5rem; /* Tamanho da fonte aumentado */
     font-weight: 500;
     color: #333;
     margin: 0;
@@ -46,24 +44,22 @@ p {
 /* Responsividade para o Loading */
 @media (max-width: 768px) {
     .spinner {
-        width: 60px;
-        height: 60px;
+        width: 80px;
+        height: 80px; /* Ajuste o tamanho do spinner para telas menores */
     }
 
     p {
-        font-size: 1rem;
-        /* Ajuste de fonte para telas menores */
+        font-size: 1.2rem; /* Ajuste do tamanho da fonte */
     }
 }
 
 @media (max-width: 480px) {
     .spinner {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px; /* Ajuste o tamanho do spinner para telas muito pequenas */
     }
 
     p {
-        font-size: 0.9rem;
-        /* Ajuste de fonte para telas muito pequenas */
+        font-size: 1rem; /* Ajuste do tamanho da fonte */
     }
 }
