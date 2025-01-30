@@ -3,7 +3,7 @@ import { Tab, Tabs } from 'react-bootstrap';
 import './Menu.css';
 
 // Importar imagens
-import coffee1 from '../../assets/images/graos2.jpg';
+import coffee1 from '../../assets/images/cafe3.webp';
 import coffee2 from '../../assets/images/petit.jpg';
 import coffee3 from '../../assets/images/croissant.jpeg';
 import coffee4 from '../../assets/images/milk.jpeg';

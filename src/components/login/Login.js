@@ -20,7 +20,11 @@ function Login() {
       // Redirecionando para a página de contatos após o login
       navigate('/home');  // Ou qualquer outra página desejada
     } catch (err) {
-      setError(err.message || 'Erro ao fazer login');
+      if (err.message === 'Failed to fetch') {
+        setError('Erro interno do servidor. Tente novamente mais tarde.');
+      } else {
+        setError(err.message || 'Erro ao fazer login');
+      }
     }
   };
 

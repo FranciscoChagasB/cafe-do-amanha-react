@@ -15,7 +15,7 @@ function Carousel() {
         slidesToShow: 1, 
         slidesToScroll: 1,
         autoplay: true, 
-        autoplaySpeed: 3000, // Ajuste para um tempo mais confortável
+        autoplaySpeed: 1800, // Ajuste para um tempo mais confortável
     };
 
     return (

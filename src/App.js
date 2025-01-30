@@ -34,7 +34,10 @@ function Root() {
                     element={isAuthenticated ? <Navigate to="/home" /> : <Navigate to="/login" />}
                 />
                 {/* Rota pública para o login */}
-                <Route path="/login" element={<Login />} />
+                <Route 
+                    path="/login" 
+                    element={isAuthenticated ? <Navigate to="/home" /> : <Login/>} 
+                />
                 {/* Rotas protegidas */}
                 <Route
                     path="/home"
