@@ -1,10 +1,10 @@
 /* Container principal */
 .login-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 1000px;
     margin: 50px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
+    padding: 50px;
+    background-color: #f3e5d8; /* Bege claro, remetendo ao creme do café */
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -14,7 +14,7 @@
 .login-container h2 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #333;
+    color: #5c4033; /* Marrom escuro, remetendo ao café */
     font-weight: 600;
 }
 
@@ -28,7 +28,7 @@
 .login-container label {
     font-size: 14px;
     font-weight: 500;
-    color: #555;
+    color: #4e3629; /* Tom de marrom médio */
     display: block;
     margin-bottom: 5px;
 }
@@ -38,14 +38,14 @@
     width: 98%;
     padding: 12px;
     font-size: 14px;
-    border: 1px solid #ccc;
+    border: 1px solid #a67b5b; /* Marrom claro */
     border-radius: 4px;
     background-color: #fff;
     transition: border-color 0.3s ease;
 }
 
 .login-container input:focus {
-    border-color: #007bff;
+    border-color: #8b5e3b; /* Marrom médio mais forte */
     outline: none;
 }
 
@@ -53,7 +53,7 @@
 .error-message {
     font-size: 16px;
     color: white;
-    background-color: #e74c3c;
+    background-color: #b22222; /* Vermelho queimado, para alertas */
     padding: 10px;
     border-radius: 5px;
     margin-top: 15px;
@@ -65,7 +65,7 @@
 .login-container button {
     width: 100%;
     padding: 12px;
-    background-color: #007bff;
+    background-color: #6f4e37; /* Marrom café principal */
     color: white;
     border: none;
     border-radius: 4px;
@@ -76,11 +76,11 @@
 }
 
 .login-container button:hover {
-    background-color: #0056b3;
+    background-color: #5c4033; /* Marrom mais escuro ao passar o mouse */
 }
 
 .login-container button:disabled {
-    background-color: #ccc;
+    background-color: #a67b5b; /* Marrom claro desabilitado */
     cursor: not-allowed;
 }
 

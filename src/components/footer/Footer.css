@@ -1,19 +1,17 @@
-/* Estilo do Footer */
+/* src/components/Footer.css */
 .footer {
     background-color: #8b5e3c;
-    color: white;
+    color: #fff;
     text-align: center;
     padding: 20px 0;
+    position: relative; /* Ajustado para evitar sobreposição */
     width: 100%;
-    position: relative;
-    margin-top: 0px; /* Ajuste para evitar sobreposição */
-    z-index: 10;
+    z-index: 2; /* Certifica que o footer fique acima de outros elementos */
 }
 
 .footer .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 .footer p {

@@ -75,15 +75,14 @@
 
 /* Botão de Logout */
 .logout-btn {
-    background-color: #ff6f61;
+    background-color: #ef7e74;
     color: #fff;
-    padding: 10px 20px;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .logout-btn:hover {

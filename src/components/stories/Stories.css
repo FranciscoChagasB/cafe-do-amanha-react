@@ -1,8 +1,8 @@
 /* General Styles for Stories Section */
 .stories-section {
-    min-height: 100vh; /* Agora ocupa toda a tela */
+    min-height: 60vh; /* Agora ocupa toda a tela */
     width: 100%;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     background-color: #fdf7f3;
     color: #333;
     font-family: 'Roboto', sans-serif;
